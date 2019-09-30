@@ -79,7 +79,7 @@ def parse_args():
 
     # Parse args
     opts = parser.parse_args()
-    data_dir = '/datasets/self-driving-demo-data/camera/*.h5'
+    data_dir = '/shared/datasets/commaai/camera/*.h5'
     opts.train_data = data_dir
 
     model_dir = os.path.abspath(os.environ.get('PS_MODEL_PATH', os.getcwd() + '/models') + '/self-driving')
